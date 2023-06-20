@@ -1,5 +1,3 @@
-import Head from "next/head";
-import Image from "next/image";
 import React from "react";
 
 import styles from "%/Home.module.css";
@@ -10,7 +8,7 @@ export default function Home() {
     <>
       <DefaultHead />
       <main className={styles.main}>
-        
+        <div>test</div>
       </main>
     </>
   );
