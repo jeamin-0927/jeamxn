@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import styles from "%/Home.module.css";
 import DefaultHead from "@/components/DefaultHead";
