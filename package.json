@@ -6,7 +6,7 @@
     "dev": "next dev",
     "start": "next start",
     "lint": "next lint",
-    "cname": "echo jeamxn.dev > build\\CNAME",
+    "cname": "echo jeamxn.dev > out/CNAME",
     "build": "next build && next export",
     "predeploy": "yarn build && yarn cname",
     "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
