@@ -1,19 +1,30 @@
-import React from "react";
+/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
 
 import styles from "%/Home.module.css";
 import DefaultHead from "@/components/DefaultHead";
+
+const maxPage = 8;
 
 export default function Home() {
   return (
     <>
       <DefaultHead />
       <main className={styles.main}>
-        <iframe 
-          // style="border: 1px solid rgba(0, 0, 0, 0.1);" 
-          className={styles.iframe}
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FFT4RGqm6kyarSaJRzpUeUS%2FJeamin-Portfolio%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-3%26viewport%3D285%252C398%252C0.04%26scaling%3Dscale-down-width%26starting-point-node-id%3D1%253A3"
-          allowFullScreen 
-        />
+        {
+          Array(maxPage).fill(0).map((_, i) => (
+            <div key={i} className={styles.imageContainer}>
+              <div 
+                style={{
+                  backgroundImage: `url(/documents/${i + 1}.svg)`,
+                }}
+                alt={`${i + 1} 페이지`} 
+                className={styles.image}
+              />
+            </div>
+          ))
+        }
       </main>
     </>
   );
