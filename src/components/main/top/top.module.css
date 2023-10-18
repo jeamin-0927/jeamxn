@@ -1,0 +1,84 @@
+.top {
+  background-color: rgb(var(--color-dark-button));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 100px;
+
+  height: auto;
+  min-height: 100vh;
+}
+@supports (height: 100dvh) {
+  .top {
+    height: auto;
+    min-height: 100dvh;
+  }
+}
+
+.title {
+  font-family: 'Wix Madefor Display', sans-serif;
+  color: rgb(var(--color-light-text));
+  font-size: 13vw;
+  font-weight: 900;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.buttons > p {
+  color: rgb(var(--color-light-text));
+  font-size: 16px;
+}
+
+@media screen and (max-width: 500px) {
+  .buttons {
+    flex-direction: column;
+  }
+}
+
+.logoAnimation {
+  animation: logoInitAnimation 1s ease-in-out, logoAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: translateX(-38vw) rotate(0deg);
+  }
+  100% {
+    transform: translateX(38vw) rotate(360deg);
+  }
+}
+
+@keyframes logoInitAnimation {
+  0% {
+    transform: scale(1) rotate(0deg);
+    filter: blur(10px);
+  }
+  50% {
+    transform: scale(3) rotate(360deg);
+    filter: blur(0px);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    filter: blur(0px);
+  }
+}
+
+* {
+  animation: blur 1s ease-in-out;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(20px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
