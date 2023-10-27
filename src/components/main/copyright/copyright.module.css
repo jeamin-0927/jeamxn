@@ -1,0 +1,29 @@
+.main {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+}
+.jeaminChoi {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.Generated {
+  font-size: 16px;
+  line-height: 1.5em;
+  opacity: .4;
+}
+.padding {
+  height: 30px;
+  width: 100%;
+}

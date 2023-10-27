@@ -3,7 +3,7 @@ import styles from "./about.module.css";
 
 export default component$(() => {
   return (
-    <div class={styles.inner} id="about">
+    <div class={styles.inner}>
       <div class={styles.about}>
         <div class={[styles.box, styles.image].join(" ")}>
           <img src="image.jpeg" width={80} height={80} class={styles.image} />

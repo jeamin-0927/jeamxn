@@ -1,0 +1,53 @@
+.main {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1000px;
+}
+.title {
+  font-family: 'Wix Madefor Display', sans-serif;
+  color: rgb(var(--color-dark-text-2));
+  font-size: 48px;
+  line-height: 1.2em;
+  font-weight: 900;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.email, .github {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.1s ease-in-out;
+}
+.email:active, .github:active {
+  opacity: 0.8;
+}
+.email {
+  background-color: rgb(51, 65, 92);
+  color: rgb(var(--color-dark-text));
+}
+.github {
+  background-color: rgb(var(--color-light-background));
+  color: rgb(var(--color-light-text));
+}

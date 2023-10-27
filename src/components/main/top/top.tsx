@@ -13,8 +13,8 @@ export default component$(() => {
       <h1 class={styles.title}>PORTFOLIO</h1>
       <div class={styles.buttons}>
         <a href="#about">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#projects">Projects</a>
+        <a href="#getready">Contact</a>
       </div>
     </div>
   )

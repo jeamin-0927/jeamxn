@@ -1,4 +1,13 @@
 .main {
   background-color: rgb(var(--color-dark-background));
-  min-height: 100vh;
+  width: 100vw;
 }
+/* .page {
+  height: 100vh;
+  width: 100vw;
+}
+@supports (height: 100dvh) {
+  .page { 
+    height: 100dvh;
+  }
+} */
